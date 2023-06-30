@@ -1,6 +1,6 @@
-// hello-world.js
 
-exports.handler = async (event, context) => {
+
+exports.handler = async () => {
   const apiKey = process.env.API_KEY;
   console.log('API_KEY:', apiKey);
 
