@@ -1,15 +1,16 @@
-// script.js
+
 async function fetchData() {
     const response = await fetch('http://localhost:8888/.netlify/functions/hello');
+    console.log("hi");
     return response;
   }
   
   document.getElementById('triggerButton').addEventListener('click', async () => {
     try {
-      const response = await fetchData(); // Call the function to fetch data
+      const response = await fetchData(); 
       const data = await response.json();
       const resultContainer = document.getElementById('resultContainer');
-      resultContainer.textContent = data.message; // Update the content with the result
+      resultContainer.textContent = data.message; 
     } catch (error) {
       console.error('Error:', error);
     }
