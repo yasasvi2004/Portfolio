@@ -3,7 +3,7 @@ hr{
    border-bottom: none;
     
     width: 4%;
-    margin:100px auto ;
+    margin:6.25rem auto ;
 } 
  body{
     margin: 0;
@@ -14,7 +14,7 @@ hr{
 h1{
     color: #F56EB3;
     font-size:5.56em;
-    margin: 50px auto 0 auto;
+    margin: 3.125rem auto 0 auto;
     font-family: "Sofia", sans-serif; 
    
    
@@ -28,13 +28,13 @@ h2{
 h3{
     
     font-family: Sacramento; 
-    font-size: 50px;
+    font-size: 3.125rem;
     color:#F56EB3
     
 }
 a{
     font-family: sans-serif;
-    margin:20px 10px;
+    margin:1.25rem 0.625rem;
     color:#F56EB3;
     text-decoration: none;
     
@@ -55,7 +55,7 @@ a:hover{
     background-color:#F9B5D0 ;
     
     position: relative;
-    padding-top: 200px;
+    padding-top: 12.5rem;
     
    
    
@@ -70,14 +70,14 @@ a:hover{
 .bottom-container{
 
     background-color:#DEBACE;
-    padding:20px 0 10px;
+    padding:1.25rem 0 0.625rem;
    
     
 }
 .stu{
     text-decoration: none;
     font-family: "Audiowide", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #F56EB3;
     
 
@@ -85,17 +85,17 @@ a:hover{
 .topcloud{
     color: skyblue;
     position: absolute;
-    right: 300px;
-    top: 50px;
+    right: 18.75rem;
+    top: 3.125rem;
 }
 .bottomcloud{
     position: absolute;
-    top: 300px;
+    top: 18.75rem;
 }
 
 .Skills{
     
-    width: 400px;
+    width: 25rem;
     
 }
 
@@ -111,7 +111,7 @@ a:hover{
     border-radius: 28px;
     font-family: Arial;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }
@@ -130,21 +130,21 @@ a:hover{
         
       }
  .pp{
-        font-size: 30px;
+        font-size: 1.875rem;
         color: #411530;
         font-family: IBM Plex Mono;
         
       }
 .qq{
-        font-size: 25px;
+        font-size: 1.563rem;
       }
 .ww{
-        font-size: 30px;
+        font-size: 1.875rem;
         color: #411530;
         font-family: IBM Plex Mono;
       }
 .ee{
-        font-size: 25px;
+        font-size: 1.563rem;
         color: #411530;
         font-family: IBM Plex Mono;
 
@@ -152,34 +152,107 @@ a:hover{
     }
 .pa{
         
-        height: 300px;
+        height: 18.75rem;
         position: absolute;
-        right: 100px;
+        right: 6.25rem;
         
     }
 .bird{
     position: absolute;
-    height: 100px;
-    left: 100px;
-    top: 100px;
+    height: 6.25rem;
+    left: 6.25rem;
+    top: 6.25rem;
 }  
 .image2{
     position: absolute;
-    height: 100px;
-    right: 100px;
-    top: 250px;
+    height: 6.25rem;
+    right: 6.25rem;
+    top: 15.625rem;
 } 
 .fat{
     position: absolute;
-    left: 40px;
-    top: 643px;
-    height: 200px;
+    left: 2.5rem;
+    top: 40.128rem;
+    height: 12.5rem;
 } 
 .mount{
     position: relative;
-    padding-left: 600px;
+    padding-left: 37.5rem;
+    
+    
+    
+    
     
 }
+@media (max-width:500px){
+    .middle-container{
+        height: 100%;
+        width: 100%;
+        padding: 1000px 0;
+    }
+    .mount{
+        padding-left: 5px;
+    }
+ .pa{
+    height: 80px ;
+    right: 0px;
+        
+    
+ }   
+ .ww{
+    font-family: "Rubik Bubbles";
+    color: #2146C7;
+    font-size: 30px;
+   
+ }
+ .rr{
+    font-family: Sacramento; 
+    font-size: 30px;
+    color:#F56EB3;
+
+ }
+ .topcloud{
+    height: 30px;
+    left: 10px;
+    top: 250px;
+ }
+ .bird{
+    padding: 0;
+    left: 10px;
+    
+ }
+ .mount{
+    height: 100px;
+    padding: 0 50px;
+    left: 90px;
+ }
+ .fat{
+    height: 110px;
+    padding: 0;
+    left: 10px;
+    top: 350px;
+ }
+.zx{
+    font-size: 30px;
+}
+.stu{
+    font-size: 20px;
+}
+.bottomcloud{
+    height:30px;
+    right: 10px;
+    padding: 0;
+    top: 20px;
+}
+ 
+}
+
+    
+
+
+
+
+
 
     
       
