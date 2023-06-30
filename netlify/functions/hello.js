@@ -1,14 +1,11 @@
-exports.handler = async () => {
-    return {
-      statusCode: 200,
-      body: 'hello world!',
-    };
+// hello-world.js
+
+exports.handler = async (event, context) => {
+  const apiKey = process.env.API_KEY;
+  console.log('API_KEY:', apiKey);
+
+  return {
+    statusCode: 200,
+    body: `Environment variable API_KEY value: ${apiKey}`,
   };
-  exports.handler = async () => {
-    const mySecret = process.env.MY_SECRET;
-    return {
-      statusCode: 200,
-      body: `hello world! I have a ${mySecret}`,
-    };
-  };
-  
+};
