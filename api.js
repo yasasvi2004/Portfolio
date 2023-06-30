@@ -1,17 +1,12 @@
-
-async function fetchData() {
-    const response = await fetch('http://localhost:8888/.netlify/functions/hello');
-    return response;
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    // Attach event listener to the button
+    document.getElementById('triggerButton').addEventListener('click', function() {
+      console.log('Button clicked'); // Check if the button click event is triggered
   
-  document.getElementById('triggerButton').addEventListener('click', async () => {
-    try {
-      const response = await fetchData(); 
-      const data = await response.json();
-      const resultContainer = document.getElementById('resultContainer');
-      resultContainer.textContent = data.message; 
-    } catch (error) {
-      console.error('Error:', error);
-    }
+      // Redirect to the desired page
+      console.log('Before redirection');
+      window.location.href = 'http://localhost:8888/.netlify/functions/hello'; // Replace with your desired URL
+      console.log('After redirection');
+    });
   });
-console.log(response);
+  
