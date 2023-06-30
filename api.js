@@ -1,7 +1,6 @@
 
 async function fetchData() {
     const response = await fetch('http://localhost:8888/.netlify/functions/hello');
-    console.log("hi");
     return response;
   }
   
@@ -15,4 +14,4 @@ async function fetchData() {
       console.error('Error:', error);
     }
   });
-  
+console.log(response);
