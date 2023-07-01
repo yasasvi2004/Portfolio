@@ -9,4 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('After redirection');
     });
   });
+netlifyIdentity.init();
+const user = netlifyIdentity.currentUser();
+console.log(user.email);
+
   
