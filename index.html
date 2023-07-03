@@ -3,133 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-    </style>
+    <title>Yasasvi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Sacramento&display=swap'); </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="api.js"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-   
-      
+
 </head>
+<body>
+  <a href="login.html">Login</a>
 
-<div class="">
-    <body class="d-flex align-items-center py-4 bg-body-tertiary">
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-          <symbol id="check2" viewBox="0 0 16 16">
-            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
-          </symbol>
-          <symbol id="circle-half" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-          </symbol>
-          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
-            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-          </symbol>
-          <symbol id="sun-fill" viewBox="0 0 16 16">
-            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-          </symbol>
-        </svg>
-    
-        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
-            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-                Light
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-                Dark
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-                Auto
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-          </ul>
+  <div class="sky"> 
+    <div class="top-container">
+        <img class="bird" src="./images/attachment_116335822-removebg-preview-removebg-preview (1).png" alt="">
+        <img class="topcloud" src="./images/cloud.png" alt="cloud-img">
+    <h1 class="zx" >I'm Yasasvi </h1>
+    <img class="image2" src="./images/attachment_116335822-removebg-preview-removebg-preview (1).png" alt="">
+    <p><span class="stu">a UG student at IIIT NAGPUR</span></p>
+    <img class="bottomcloud" src="./images/cloud.png" alt="cloud-img">
+    <img class="mount" src="./images/mountain.png" alt="mountain-img">
+    <img class="fat" src="./images/father-removebg-preview-transformed.png" alt="father.img">
+    </div>
+    </div>
+    <div class="middle-container">
+        <div class="profile"><br>
+          <img class="image" src="./images/Pandu.jpg" alt="Yasasvi.img">
+          <h2>Hello</h2>
+          <p class="ee">I am a student pursuying my B-tech 2nd year at IIIT NAGPUR.I'm a Movie lover</p>
+          <p></p>
         </div>
-    
-        
-    <main class="form-signin w-100 m-auto">
-      <form id="loginForm" style="
-        width: 298px;
-    ">
-        
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-    
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
+        <hr>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="Skills" src="./images/1621922279_blog10-removebg-preview.png" alt="Skills.img">
+          </div>
+          
+          <div class="skill-row">
+            <h3>1)Web design and development</h3>
+            <img class="web" src="./images/images (1).jpg" alt="web.img">
+            
+            <p class="ww">I started learning to code from first year of my btech .</p>
+          </div>
+          <h3>2)Foodie</h3>
+          <img src="./images/download.jpg"  class="junk" alt="">
+            <p class="pp">I'm a big Junk food lover.</p>
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
+        <hr>
+        <div class="contact-me">
+            <img class="pa" src="./images/hand-print-stop-10069351-transformed-removebg-preview (1).png"alt="imas.img">
+          <h2 class="ww"> Get In Touch</h2>
+          
+          <h3 class="rr" >Need a hand?Or a high five?.</h3>
+          <p class="qq">Here's how to reach me</p>
+          <br>
+          <a class="btn" href="mailto:pandu.krishna04@gmail.com">CONTACT ME</a><br><br><br><br>
+          
+         
+
         </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <br>
+       
+        <a class="footer-link" href="https://www.linkedin.com/in/yasasvi-krishna-25b80523a/">LinkedIn</a>
+        <a class="footer-link" href="https://www.instagram.com/yasasvi_2470/">Instagram</a>
+        <p>© Yasasvi krishna .</p><br>
+      </div>
+      <button id="triggerButton">click</button>
+    <div id="resultContainer"></div>
+    <button onclick="netlifyIdentity.open()">Login</button>
+
+
+
+  <script src="/api.js"></script>
+      
+      
+
     
-        <div class="form-check text-start my-3">
-          <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Remember me
-          </label>
-        </div>
-        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
-      </form>
-    </main>
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Perform login validation and authentication
-    var email = document.getElementById("floatingInput").value; // Get the entered email address
-    var password = document.getElementById("floatingPassword").value; // Get the entered password
-
-    // Perform your login validation and authentication logic here
-    // Replace the comparison with the appropriate logic for your authentication system
-    if (isValidCredentials(email, password)) {
-      window.location.href = "https://demo3121.netlify.app/"; // Replace with your website URL
-    } else {
-      alert("Invalid credentials. Please try again.");
-    }
-  });
-});
-
-function isValidCredentials(email, password) {
-  // Add your login validation and authentication logic here
-  // Return true if the credentials are valid, false otherwise
-
-  // For demonstration purposes, assume the login is successful
-  // if the email is not empty and the password is at least 6 characters long
-  return email !== "" && password.length >= 6;
-}
-
-      </script>
     
-        
-    
-    </body>
-</div> 
-  
-
+</body>
 </html>
